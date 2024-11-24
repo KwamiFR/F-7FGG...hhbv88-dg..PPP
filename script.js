@@ -13,7 +13,7 @@ const episodeList = document.getElementById('episode-list');
 let currentMovieId = null; // Variable pour stocker l'ID du film
 
 // Définir la version de l'application
-const appVersion = "1.5.5";
+const appVersion = "2.0.1";
 
 // Insérer la version dans l'élément HTML
 document.addEventListener('DOMContentLoaded', () => {
@@ -238,4 +238,17 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 });
 
-//POP-UP INFO
+//USER BUTTON
+// Fonction pour afficher la modale
+// Fonction pour afficher la modale
+function showCustomModal() {
+    document.getElementById('customModal').style.display = 'flex';
+    document.body.classList.add('no-scroll-custom'); // Ajoute la classe pour désactiver le scroll
+  }
+  
+  // Fonction pour cacher la modale
+  function hideCustomModal() {
+    document.getElementById('customModal').style.display = 'none';
+    document.body.classList.remove('no-scroll-custom'); // Supprime la classe pour réactiver le scroll
+  }
+  

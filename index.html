@@ -36,7 +36,25 @@
         <p><b>V<span id="version"></span></b></p>
         <div class="search-container">
             <input type="text" id="search-bar" placeholder="Rechercher...">
-        </div>       
+        </div>
+        
+        <!-- Bouton de profil -->
+<div class="custom-profile-btn" onclick="showCustomModal()">
+    <i class="fa-solid fa-user"></i>
+  </div>
+  
+  <!-- Modale -->
+  <div class="custom-modal-overlay" id="customModal">
+    <div class="custom-modal-content">
+      <button class="custom-close-btn" onclick="hideCustomModal()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="custom-modal-icon">
+        <i class="fa-solid fa-ban"></i>
+      </div>
+      <p class="custom-modal-text">La création de compte est la connexion au compte <b>n'est pas encore activé</b><br><br>Une version <b>BETA</b> de cette fonctionnalité serait bientôt ajouté</p>
+    </div>
+  </div>
     </header>
 
 <!--CHRGMNT-->
